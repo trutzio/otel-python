@@ -1,5 +1,10 @@
 ## Quick start
 
+Checkout https://github.com/trutzio/devops-infrastructure and execute:
+```shell
+docker compose up -d
+```
+
 ```shell
 python3 -m venv venv
 source ./venv/bin/activate
