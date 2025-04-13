@@ -5,6 +5,7 @@ Checkout https://github.com/trutzio/devops-infrastructure and execute:
 docker compose up -d
 ```
 
+Install a virtual environment for Python, install all dependencies and run the Flask server with OTEL instrumentation:
 ```shell
 python3 -m venv venv
 source ./venv/bin/activate
