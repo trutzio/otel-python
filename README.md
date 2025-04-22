@@ -57,3 +57,10 @@ starts a Python program (here flask server) with instrumentation turned on. Plea
 ```shell
 pip install flask
 ```
+
+## Start
+```shell
+source ./venv/bin/activate
+export OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true
+opentelemetry-instrument --traces_exporter otlp --metrics_exporter otlp --logs_exporter otlp --service_name dice-server flask run -p 8081
+```

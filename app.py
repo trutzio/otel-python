@@ -15,6 +15,8 @@ def roll_dice():
         logger.warning("%s is rolling the dice: %s", player, result)
     else:
         logger.warning("Anonymous player is rolling the dice: %s", result)
+    if result == '6':
+        raise Exception("Sorry, you rolled a 6!") 
     return result
 
 
